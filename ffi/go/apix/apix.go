@@ -125,7 +125,7 @@ func (self *Apix) Drop() {
 }
 
 func (self *Apix) SetWaitTimeout(usec uint64) () {
-    C.apix_set_wait_timeout(self.ctx, C.ulong(usec))
+    C.apix_set_wait_timeout(self.ctx, C.ulonglong(usec))
 }
 
 func (self *Apix) WaitStream() (ApixStream) {

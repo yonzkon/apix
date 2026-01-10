@@ -1,6 +1,7 @@
 package log
 
 // #include <apix/log.h>
+// #cgo LDFLAGS: -lapix
 import "C"
 
 func LogSetLevelInfo() {

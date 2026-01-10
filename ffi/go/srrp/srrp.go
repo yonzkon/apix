@@ -1,6 +1,7 @@
 package srrp
 
 // #include <apix/srrp.h>
+// #cgo LDFLAGS: -lapix
 import "C"
 import "unsafe"
 import "errors"
